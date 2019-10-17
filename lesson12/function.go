@@ -8,7 +8,10 @@ func celsiusToFahrenheit(c float64) float64 {
 }
 
 func kelvinToFahrenheit(k float64) float64 {
-	return celsiusToFahrenheit(k - 273.15)
+	return celsiusToFahrenheit(kelvinToCelsius(k))
+}
+func kelvinToCelsius(k float64) float64 {
+	return k - 273.15
 }
 
 func main() {
