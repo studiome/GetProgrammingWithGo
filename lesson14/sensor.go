@@ -20,4 +20,5 @@ func main() {
 	fmt.Println(sensor())
 	sensor = realSensor
 	fmt.Println(sensor())
+
 }
