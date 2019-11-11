@@ -7,7 +7,7 @@ import (
 type Planets []string
 
 func (p Planets) terraform() Planets {
-	newPlanets := p
+	newPlanets := make(Planets, len(p))
 	for i := range p {
 		newPlanets[i] = "New" + p[i]
 	}
@@ -17,4 +17,5 @@ func (p Planets) terraform() Planets {
 func main() {
 	planets := []string{"Mars", "Uranus", "Neptune"}
 	fmt.Println(Planets(planets).terraform())
+	fmt.Println(planets)
 }
