@@ -17,4 +17,6 @@ func (p Planets) terraform() Planets {
 func main() {
 	planets := []string{"Mars", "Uranus", "Neptune"}
 	fmt.Println(Planets(planets).terraform())
+	fmt.Println("original slice is ")
+	fmt.Println(planets)
 }
