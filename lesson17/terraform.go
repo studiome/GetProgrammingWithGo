@@ -16,7 +16,5 @@ func (p Planets) terraform() Planets {
 
 func main() {
 	planets := []string{"Mars", "Uranus", "Neptune"}
-	fmt.Println(planets)
 	fmt.Println(Planets(planets).terraform())
-	fmt.Println(planets)
 }
