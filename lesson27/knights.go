@@ -42,10 +42,10 @@ func (c character) String() string {
 }
 
 func main() {
-	arthur := character{
+	arthur := &character{
 		name: "Arthur",
 	}
-	knight := character{
+	knight := &character{
 		name: "a kinght",
 	}
 	fmt.Println(arthur)
@@ -55,7 +55,7 @@ func main() {
 		name: "Caliburn",
 	})
 	fmt.Println(arthur)
-	arthur.give(&knight)
+	arthur.give(knight)
 	fmt.Println(arthur)
 	fmt.Println(knight)
 
